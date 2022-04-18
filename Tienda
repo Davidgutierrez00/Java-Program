@@ -1,0 +1,75 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package tienda;
+
+/**
+ *
+ * @author caldas
+ */
+public class Producto {
+    private String nombre;
+    public String categoria;
+    private double precioUni;
+    private double precioTotal;
+    private double cantidad;
+    private double iva;
+          
+    
+        public String getCategoria() {
+            return categoria;
+        }
+        public void setCategoria(String categoria) {
+            this.categoria=categoria;
+        }
+        public String getNombre() {
+            return nombre;
+        }
+        public void setNombre(String nombre) {
+            this.nombre=nombre;
+        }
+        public double getPrecioUni() {
+            return precioUni;
+        }
+        public void setPrecioUni(double precioUni) {
+            this.precioUni=precioUni;
+        }
+        public double getCantidad() {
+            return cantidad;
+        }
+        public void setCantidad(double cantidad) {
+            this.cantidad=cantidad;
+        }
+        public double getIva() {
+            return iva;
+        }
+        public void setIva(double iva) {
+            this.iva=iva;
+        }
+     public void precioTotal(double PrecioUni, String categoria){
+         if(categoria=="Viveres")
+         {
+             precioTotal =(precioUni+1);
+         }
+         else
+         {if(categoria=="Aseo")
+         { precioTotal =(precioUni+1.16); }
+         else
+         {if(categoria=="Mascotas")
+         {precioTotal =(precioUni+1.19);}
+         else
+             
+         {if(categoria=="Licores")
+         {precioTotal =(precioUni+1.25);}
+         else
+         {if(categoria=="Hogar")
+         {precioTotal =(precioUni+1.19);}
+         }
+         {}
+             }
+             }
+     }       
+}
+}
